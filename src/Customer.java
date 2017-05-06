@@ -5,7 +5,7 @@ class Customer {
 	private Vector rentals = new Vector();
 
 	public Customer(String newname) {
-		this.name = newname;
+		setName(newname);
 	};
 
 	public void addRental(Rental rental) {
@@ -15,6 +15,18 @@ class Customer {
 	public String getName() {
 		return this.name;
 	};
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Vector getRentals() {
+		return rentals;
+	}
+
+	public void setRentals(Vector rentals) {
+		this.rentals = rentals;
+	}
 
 	public String statement() {
 		Enumeration enum_rentals = this.rentals.elements();

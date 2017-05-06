@@ -3,8 +3,8 @@ class Rental {
 	private int daysRented;
 
 	public Rental(Movie newmovie, int newdaysRented) {
-		this.movie = newmovie;
-		this.daysRented = newdaysRented;
+		setMovie(newmovie);
+		setDaysRented(newdaysRented);
 	}
 
 	public int getDaysRented() {
@@ -13,5 +13,13 @@ class Rental {
 
 	public Movie getMovie() {
 		return this.movie;
+	}
+
+	public void setMovie(Movie movie) {
+		this.movie = movie;
+	}
+
+	public void setDaysRented(int daysRented) {
+		this.daysRented = daysRented;
 	}
 }
