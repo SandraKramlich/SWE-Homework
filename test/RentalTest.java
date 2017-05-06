@@ -40,7 +40,7 @@ public class RentalTest {
 	
 	@Test
     public void testFrequentRenterPoints() throws Exception{
-    	assertEquals(2, r1.getFrequentRenterPoints(),0);
-    	assertEquals(1, r2.getFrequentRenterPoints(),0);
+    	assertEquals(2, r1.getMovie().getFrequentRenterPoints(r1.getDaysRented()),0);
+    	assertEquals(1, r2.getMovie().getFrequentRenterPoints(r2.getDaysRented()),0);
     }
 }
