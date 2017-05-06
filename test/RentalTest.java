@@ -34,8 +34,8 @@ public class RentalTest {
 
 	@Test
     public void testAmountCalculation() throws Exception{
-    	assertEquals(EXPECTED1, r1.getMovie().getCharge(r1.getDaysRented()),0);
-    	assertEquals(EXPECTED2, r2.getMovie().getCharge(r2.getDaysRented()),0);
+    	assertEquals(EXPECTED1, r1.getMovie().price.getCharge(r1.getDaysRented()),0);
+    	assertEquals(EXPECTED2, r2.getMovie().price.getCharge(r2.getDaysRented()),0);
     }
 	
 	@Test

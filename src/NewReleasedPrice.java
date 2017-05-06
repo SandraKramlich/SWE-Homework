@@ -1,5 +1,9 @@
 
-public class NewReleasedPrice extends Price{
+public class NewReleasedPrice extends Price {
+	@Override
+	double getCharge(int daysRented) {
+		return daysRented * 3;
+	}
 
 	@Override
 	int getPriceCode() {
