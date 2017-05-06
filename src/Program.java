@@ -15,5 +15,8 @@ public class Program {
 		System.out.println("Let's get the Statement");
 		result = c1.statement();
 		System.out.println(result);
+		System.out.println("Let's get the HTML Statement");
+		result = c1.htmlStatement();
+		System.out.println(result);
 	}
 }
