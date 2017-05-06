@@ -13,4 +13,9 @@ public class RegularPrice extends Price {
 	int getPriceCode() {
 		return Movie.REGULAR;
 	}
+
+	@Override
+	int getFrequentRenterPoints(int daysRented) {
+		return 1;
+	}
 }

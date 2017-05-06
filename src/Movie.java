@@ -38,12 +38,5 @@ public class Movie {
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-	int getFrequentRenterPoints(int daysRented) {
-		if ((getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1)
-			return 2;
-		else
-			return 1;
 	};
 }

@@ -14,4 +14,9 @@ public class ChildrenPrice extends Price {
 		return Movie.CHILDRENS;
 	}
 
+	@Override
+	int getFrequentRenterPoints(int daysRented) {
+		return 1;
+	}
+
 }

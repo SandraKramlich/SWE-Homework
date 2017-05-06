@@ -68,7 +68,7 @@ class Customer {
 		Enumeration rentals = this.rentals.elements();
 		while (rentals.hasMoreElements()) {
 			Rental each = (Rental) rentals.nextElement();
-			result += each.getMovie().getFrequentRenterPoints(each.getDaysRented());
+			result += each.getMovie().price.getFrequentRenterPoints(each.getDaysRented());
 		}
 		return result;
 	}
