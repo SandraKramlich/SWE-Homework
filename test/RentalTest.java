@@ -7,6 +7,7 @@ public class RentalTest {
 
     private Rental r1;
     private Movie m1;
+    private double EXPECTED = 15.0;
 
     @Before
     public void setup() {
@@ -24,4 +25,8 @@ public class RentalTest {
         assertEquals(m1, r1.getMovie());
     }
 
+	@Test
+    public void testAmountCalculation() throws Exception{
+    	assertEquals(EXPECTED, r1.getCharge(),0);
+    }
 }
